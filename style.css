@@ -1,0 +1,938 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* Global Vars */
+
+:root {
+  --blue: #64fcd9;
+  --black: #00160a;
+}
+
+/* Custom Classes */
+
+.large__text {
+  font-weight: 500;
+  line-height: 90px;
+  font-size: 70px;
+}
+
+.small__text {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 43px;
+}
+
+.large__btn {
+  display: block;
+  font-size: 45px;
+  font-weight: 500;
+  color: white;
+  width: 288.45px;
+  height: 105px;
+  background-color: var(--black);
+  border: none;
+  border-radius: 18px;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  outline-color: transparent;
+  outline-style: none;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #212121;
+  transform: translateY(4px);
+}
+
+.small__btn {
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+  width: 202px;
+  height: 74.16px;
+  background-color: var(--black);
+  border: none;
+  box-shadow: 7.06294px 7.06294px 2.82517px rgba(0, 0, 0, 0.25);
+  border-radius: 12.7133px;
+  outline-color: transparent;
+  outline-style: none;
+  cursor: pointer;
+}
+
+.mobile__btn {
+  display: none;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  width: 350px;
+  height: 55.41px;
+  color: white;
+  background-color: var(--black);
+  border: none;
+  box-shadow: 5.27062px 5.27062px 2.10825px rgba(0, 0, 0, 0.25);
+  border-radius: 9.48711px;
+  outline-color: transparent;
+  outline-style: none;
+  cursor: pointer;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+/* Home section START */
+
+.section__home-mobileWrapper {
+  background-color: white;
+  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+  transition-timing-function: ease-out;
+  top: 72.1px;
+  width: 100%;
+  height: 1000px;
+  z-index: 99;
+}
+
+.section__home-items__mobile {
+  display: flex;
+  list-style: none;
+  line-height: 47px;
+  font-size: 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.section__home-items__mobile li {
+  margin-bottom: 69px;
+}
+
+#bars-menu {
+  display: none;
+  cursor: pointer;
+}
+
+#x-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.section__home {
+  padding-bottom: 100px;
+}
+
+.section__home-navbar {
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__home-logo {
+  font-size: 90px;
+  line-height: 135px;
+  font-weight: 600;
+}
+
+.section__home-items__desktop {
+  list-style: none;
+  font-size: 47px;
+  font-weight: 400;
+}
+
+.section__home-items__desktop li {
+  margin-left: 50px;
+}
+
+.active {
+  text-decoration: underline var(--blue) solid 8px;
+  font-weight: bolder;
+}
+
+.section__home-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+}
+
+.section__home-content {
+  display: flex;
+  position: relative;
+  max-width: 580px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section__home-content h1 {
+  margin-bottom: 41px;
+}
+
+.section__home-content p {
+  margin-bottom: 61px;
+}
+
+.section__home-buttons {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.section__home-buttons button:first-child {
+  margin-right: 53px;
+}
+
+.section__home-image img {
+  width: 811px;
+}
+
+.flakes1 {
+  width: 192px;
+  margin-top: 21px;
+}
+
+.flakes2 {
+  width: 180.46px;
+}
+
+/* Home section END */
+
+/* Teachers section START */
+
+.section__teachers-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 50px;
+}
+
+.section__teachers-image img {
+  width: 699.26px;
+}
+
+.section__teachers-content {
+  display: flex;
+  position: relative;
+  max-width: 580px;
+  margin-left: 55px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section__teachers-content h1 {
+  margin-bottom: 80px;
+}
+
+.section__teachers-content p {
+  margin-bottom: 80px;
+}
+
+.flakes3 {
+  width: 192px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Teachers section END */
+
+/* Courses section START */
+
+.section__courses-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.section__courses-wrapper h1 {
+  text-decoration: underline var(--blue) solid 10px;
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.section__courses-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 58px;
+}
+
+.section__courses-cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+
+  border: solid var(--black) 3px;
+  border-radius: 8px;
+
+  width: 400px;
+  height: 633px;
+
+  box-shadow: 8.27062px 8.27062px 2.10825px rgba(0, 0, 0, 0.25);
+}
+
+.section__courses-cards img {
+  object-fit: cover;
+}
+
+.section__courses-cards div:last-child {
+  margin-left: 39px;
+}
+
+.section__courses-cards div:first-child {
+  margin-right: 39px;
+}
+
+.section__courses-cards h2 {
+  font-weight: 500;
+  line-height: 90px;
+  font-size: 65px;
+}
+
+.course-flake1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 178.97px;
+}
+
+.course-flake2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.course-flake3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Courses section END */
+
+/* CompanyApp section */
+
+.section__companyApp {
+  position: relative;
+}
+
+.section__companyApp-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__companyApp-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  max-width: 583px;
+  margin-right: 70px;
+}
+
+.section__companyApp-content h1 {
+  margin-bottom: 51px;
+}
+
+.section__companyApp-content p {
+  margin-bottom: 51px;
+}
+
+.companyApp-flake1 {
+  width: 192.19px;
+  margin-left: 180px;
+  margin-bottom: 20px;
+}
+
+.companyApp-flake2 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #171717;
+  color: white;
+  padding: 40px 0;
+  height: auto;
+  margin-top: 100px;
+}
+
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.footer__content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 50%;
+}
+
+.footer__content article {
+  height: 280px;
+}
+
+.footer__content h2 {
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 76px;
+
+  margin-bottom: 40px;
+}
+
+.footer__content ul {
+  list-style: none;
+}
+
+.footer__content a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 300;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+}
+
+.footer__icons p {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+/* Break Points START  */
+
+@media screen and (max-width: 1440px) {
+  .section__home-logo {
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  .section__home-items__desktop {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .large__text {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .small__text {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .flakes1 {
+    width: 166px;
+  }
+
+  .flakes2 {
+    width: 154px;
+  }
+
+  .large__btn {
+    width: 210px;
+    height: 74px;
+    font-size: 30px;
+    box-shadow: 5.27px 5.27px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .section__home-buttons button:first-child {
+    margin-right: 30px;
+  }
+
+  .section__home-image img {
+    width: 606.22px;
+  }
+
+  .active {
+    text-decoration: underline var(--blue) solid 5px;
+  }
+
+  .section__teachers-image img {
+    width: 432px;
+  }
+
+  .section__teachers-content h1 {
+    margin-bottom: 60px;
+  }
+
+  .section__teachers-content p {
+    margin-bottom: 60px;
+  }
+
+  .flakes3 {
+    width: 154px;
+  }
+
+  /* COURSES section */
+  .section__courses-wrapper h1 {
+    text-decoration-thickness: 8px;
+  }
+
+  .section__courses-card1 img {
+    width: 247.1px;
+    height: 259.92px;
+  }
+
+  .section__courses-card2 img {
+    width: 245.04px;
+    height: 253.35px;
+  }
+
+  .section__courses-card3 img {
+    height: 253.43px;
+    width: 225.08px;
+  }
+
+  .section__courses-cards div {
+    width: 275.32px;
+    height: 435.7px;
+    padding: 10px;
+  }
+
+  .section__courses-cards h2 {
+    line-height: 61px;
+    font-size: 40px;
+  }
+
+  .small__btn {
+    width: 154px;
+    height: 54px;
+    border-radius: 8.75px;
+
+    font-size: 25px;
+    line-height: 29.3px;
+  }
+
+  .course-flake1 {
+    width: 138.97px;
+  }
+
+  .course-flake2 {
+    width: 41px;
+  }
+
+  .course-flake3 {
+    width: 127.13px;
+  }
+
+  .section__companyApp-content {
+    max-width: 486px;
+    margin-right: 35px;
+  }
+
+  .section__companyApp-content h1 {
+    margin-bottom: 26px;
+  }
+
+  .section__companyApp-content p {
+    margin-bottom: 50px;
+  }
+
+  .section__companyApp-image img {
+    width: 471.56px;
+  }
+
+  .companyApp-flake1 {
+    width: 130.19px;
+  }
+
+  .companyApp-flake2 {
+    width: 117px;
+  }
+
+  .footer__content article {
+    width: 200px;
+    height: 230px;
+  }
+
+  .footer__content h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .footer__content a {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .footer__icons img {
+    width: 148px;
+  }
+
+  .footer__icons p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .section__padding {
+    padding: 80px 0;
+  }
+
+  .section__home {
+    padding-bottom: 80px;
+  }
+
+  .section__home-logo {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .section__home-items__desktop {
+    font-size: 30px;
+    line-height: 23.44px;
+  }
+
+  .large__text {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .small__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .flakes1 {
+    width: 136px;
+  }
+
+  .flakes2 {
+    width: 124px;
+  }
+
+  .large__btn {
+    width: 165px;
+    height: 65px;
+    font-size: 25px;
+  }
+
+  .section__home-image img {
+    width: 478.93px;
+  }
+
+  .section__teachers-image img {
+    width: 356px;
+  }
+
+  .section__teachers-content h1 {
+    margin-bottom: 41px;
+  }
+
+  .section__teachers-content p {
+    margin-bottom: 61px;
+  }
+
+  .flakes3 {
+    width: 126px;
+  }
+
+  .section__companyApp-content {
+    max-width: 357px;
+  }
+
+  .section__companyApp-content h1 {
+    margin-bottom: 20px;
+  }
+
+  .section__companyApp-image img {
+    width: 354px;
+  }
+
+  .companyApp-flake2 {
+    width: 80px;
+  }
+
+  .footer__content {
+    margin-bottom: 0;
+  }
+
+  .footer__content h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .footer__content a {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .footer__icons img {
+    width: 142px;
+  }
+
+  .footer__icons p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .section__home-items__desktop {
+    display: none;
+  }
+
+  #bars-menu {
+    display: block;
+  }
+
+  .section__courses-wrapper h1 {
+    margin-bottom: 35px;
+  }
+
+  .section__courses-cards {
+    flex-direction: column;
+  }
+
+  .section__courses-cards div:last-child {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .section__courses-cards div:first-child {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .section__courses-cards div {
+    width: 450px;
+  }
+
+  .course-flake1 {
+    display: none;
+  }
+
+  .course-flake2 {
+    display: none;
+  }
+
+  .course-flake3 {
+    display: none;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__content-wrapper {
+    width: 100%;
+  }
+
+  .footer__content article {
+    height: 288px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding: 60px 0;
+  }
+
+  .section__home {
+    padding-bottom: 60px;
+  }
+
+  .large__btn {
+    display: none;
+  }
+
+  .mobile__btn {
+    display: block;
+  }
+
+  .section__home-navbar {
+    margin: 0 23px;
+  }
+
+  .section__home-wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .section__home-content {
+    order: 2;
+    max-width: 360px;
+  }
+
+  .section__home-content h1 {
+    margin-bottom: 20px;
+  }
+
+  .section__home-content p {
+    margin-bottom: 46px;
+  }
+
+  .section__home-image {
+    margin-bottom: 30px;
+  }
+
+  .section__home-buttons {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__home-buttons button {
+    margin-bottom: 17px;
+  }
+
+  .flakes1 {
+    display: none;
+  }
+
+  .flakes2 {
+    display: none;
+  }
+
+  .large__text {
+    font-size: 32px;
+    line-height: 47px;
+  }
+
+  .small__text {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .section__teachers-wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .section__teachers-image img {
+    margin-bottom: 47px;
+  }
+
+  .section__teachers-content {
+    margin: 0;
+    max-width: 360px;
+  }
+
+  .section__teachers-content h1 {
+    margin-bottom: 7px;
+  }
+
+  .section__teachers-content p {
+    margin-bottom: 40px;
+  }
+
+  .flakes3 {
+    display: none;
+  }
+
+  .section__companyApp-wrapper {
+    flex-direction: column;
+  }
+
+  .section__companyApp-content {
+    order: 2;
+    max-width: 360px;
+    margin: 0;
+  }
+
+  .section__companyApp-image img {
+    width: 335px;
+  }
+
+  .content-text {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .section__courses-cards div {
+    width: 320px;
+  }
+
+  .footer__content article {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section__home-image img {
+    width: 375.99px;
+  }
+
+  .footer__content h2 {
+    font-size: 34px;
+    line-height: 32px;
+  }
+
+  .footer__content a {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .footer__icons img {
+    width: 114px;
+  }
+
+  .footer__icons p {
+    font-size: 16px;
+  }
+}
+
+/* Break Points END */
